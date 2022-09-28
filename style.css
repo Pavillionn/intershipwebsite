@@ -1,0 +1,1007 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #95CD41;
+    padding: 12px 15px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  
+  #navbar  a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 18px;
+    padding-right: 50px;
+    text-decoration:none;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  #navbar #logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+  }
+  
+  #navbar-right {
+    float: right;
+  }
+  
+
+  #navbar button{
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  }
+
+  #navbar button:hover {
+    background-color: white;
+    color: #000000;
+  }
+
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
+
+  /* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+    padding-top: 85px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #95CD41;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  /* search box */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    padding-right: 25px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+      padding-top: 30px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+
+  
+
+.home .max-width {
+    margin: auto 0 auto 50px;
+}
+
+.home .home-content .text-1 {
+    font-size: 40px;
+}
+
+.home .home-content .text-2 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -5px;
+}
+
+.home .home-content .text-3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: #32502E;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #32502E;
+}
+
+
+@media(max-width: 700px) {
+    .home .home-content .text-1 {
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 45px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 15px;
+    }
+}
+
+
+/*---------- Bekiung Section ----------*/
+
+.bekiung {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/desa2.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 150px;
+}
+
+.bekiung .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bekiung-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.bekiung h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.bekiung .button {
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: #95CD41;
+    position: relative;
+    cursor: pointer;
+}
+
+.bekiung .button:hover {
+    background: #054e1f;
+    transition: 1s;
+}
+
+@media(max-width: 700px) {
+    .bekiung h1 {
+        font-size: 20px;
+    }
+
+    .bekiung .button {
+        padding: 1px 0px;
+    }
+}
+
+
+/*----------- facilities -----------*/
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.facilities-col h1 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.facilities-col p {
+    padding: 0;
+}
+
+
+
+
+
+/*----- footer section -----*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: black;
+}
+
+.footer h2 {
+    color: white;
+    font-size: large;
+    padding-top: 25px;
+}
+
+.footer p {
+    color: white;
+    margin-top: 30px;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.icons .fa {
+    color: #ffffff;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #09ad48;
+    padding-bottom: 30px;
+}
+
+/*---- aboutus section ----*/
+
+.aboutus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aboutus .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.aboutus-col {
+    flex-basis: 100%;
+    border-radius: 10px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+@media(max-width: 947px) {
+    .aboutus .row {
+        flex-direction: column;
+    }
+}
+
+
+/*---- section artikel 2 ----*/
+.aboutus .artikel2 h3 {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.aboutus .artikel2 p {
+    padding-bottom: 100px;
+    padding-left: -100px;
+    font-size: large;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.aboutus .artikel2 p a {
+    color: #000000;
+}
+
+.aboutus .artikel2 img {
+    padding-top: 20px;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+}
+
+/*---- section artikel 3 ----*/
+.aboutus .artikel3 p {
+    font-size: large;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+/*---- section artikel 4 ----*/
+
+.aboutus .artikel4 h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.aboutus .artikel4 p {
+    font-size: medium;
+    padding-bottom: 50px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+/*---- section artikel 5 ----*/
+
+.aboutus .artikel5 h1 {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.aboutus .artikel5 img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+
+}
+
+.aboutus .artikel5 p {
+    font-size: large;
+    padding-bottom: 25px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+/*---- back icon section ----*/
+.back {
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    padding: 25px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background: #95CD41;
+
+}
+
+.back .max-width {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.back .icon-back a {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+/*---- section desa bekiung ----*/
+.desa {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.desa .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.desa-col {
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding-bottom: 20px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.desa .kelompok0 img {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+}
+
+.desa .kelompok1 h2 {
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.desa .kelompok1 p {
+    font-size: large;
+    padding-bottom: 20px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.desa .kelompok1 p a {
+    color: #000000;
+}
+
+.desa .kelompok2 h2 {
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.desa .kelompok2 p {
+    font-size: large;
+    padding-bottom: 45px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.desa .kelompok3 h2 {
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.desa .kelompok3 p {
+    font-size: large;
+    padding-bottom: 20px;
+    padding-left: -100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.desa .kelompok3 img {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+}
+
+.three {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.three-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.three-col img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.three-col p {
+    padding-bottom: 20px;
+
+}
+
+.three-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.three-col .button {
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #95CD41;
+    position: relative;
+    cursor: pointer;
+}
+
+/*---- Section Mr.supono's Image ----*/
+.supono img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+
+
+    width: 1000px;
+    height: 1000px;
+    align-items: center;
+}
+
+
+
+/*--- beritaa section ---*/
+.beritaa {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.beritaa .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    background: #fbfbfb;
+}
+.beritaa-col {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    padding: 50px 25px;
+    box-sizing: border-box;
+}
+.beritaa img {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+}
+.beritaa h2 {
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+.beritaa .pr1 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.beritaa .pr2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 450;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.beritaa .row .pr2{
+    margin-top: 10px;
+    display: flex;
+    padding-bottom: 100px;
+    background: #fbfbfb;
+}
+
+/*--- beritae section ---*/
+.beritae {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.beritae .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    background: #fbfbfb;
+}
+.beritae-col {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    padding: 50px 25px;
+    box-sizing: border-box;
+}
+.beritaa img {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+}
+.beritae h2 {
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+.beritae .pr1 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.beritae .pr2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 450;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.beritae .row .pr2{
+    margin-top: 10px;
+    display: flex;
+    padding-bottom: 100px;
+    background: #fbfbfb;
+}
+
+/*---- edukasi page ----*/
+.edukasi {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.edukasi .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    background: #fbfbfb;
+}
+
+.edukasi .pertanian p {
+    font-size: large;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.edukasi .pertanian h2 {
+    text-align: left;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+
+/*------ Shop Section ------*/
+
+.main-container{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+    padding-bottom: 100px;
+}
+.main-container > h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+}
+.main-container > p{
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+.category-head{
+    margin: 30px 0;
+}
+.category-head ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category-title{
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #25dd4a;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.category-title:hover{
+    opacity: 0.7;
+}
+.category-title li{
+    padding: 0 10px;
+}
+.category-title span{
+    color: #222;
+}
+
+/** single post **/
+.posts-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.posts-main-container > div{
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+}
+.post-img{
+    position: relative;
+}
+.category-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+.business .category-name{
+    background: #018607;
+}
+.culture .category-name{
+    background: #25dd4a;
+}
+.politics .category-name{
+    background: #018607;
+}
+.finance .category-name{
+    background: #25dd4a;
+}
+.sports .category-name{
+    background: #018607;
+}
+
+
+.post-content{
+    padding: 25px;
+    
+}
+.post-content-top{
+    background: #137e05;
+    color: #fff;
+    opacity: 0.8;
+    padding: 5px 0 5px 15px;
+}
+.post-content-top span{
+    padding-right: 20px;
+}
+.post-content h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 12px 0;
+    font-weight: 400;
+}
+.post-content p{
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.read-btn{
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 5px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background: transparent;
+    margin-bottom: 40px;
+}
+.read-btn a{
+    color: #000000;
+    }
+.read-btn:hover{
+    background: #f6f6f6;
+}
+
+
+
+/***************/
+@media(max-width: 1170px){
+    .posts-main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .posts-main-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/***********/
+
+.active{
+    background: #047713;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  
+  .container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+  }
+  
+  .container .heading h3 span{
+    font-weight: 100;
+  }
+  .container .box{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+  
+  .container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .container .btn{
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px ;
+    border-radius: 5px;
+  }
+  
+  .container .btn a{
+   color: #fff;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+  
+  @media only screen and (max-width: 769px){
+      .container .box{
+     flex-direction: column;
+    }
+  
+  .container .box .dream{
+    width: 100%;
+  }
+}
+
+  @media only screen and (max-width: 643px){
+  .container .heading{
+    width: 100%;
+  }
+  .container .heading h3{
+    font-size: 1em;
+  
+  }
+  
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+}
